@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="728dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="4dp"
+            android:text="Quiz App"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <TextView
+            android:id="@+id/questionOne"
+            android:layout_width="371dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="20dp"
+            android:text="Question One: \nA ___ represents, by default, the items in a row or column when using GridLayout."
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="57dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGaga"
+            android:layout_width="371dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="109dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="grid"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="layout"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="list"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="span"
+                android:textSize="12sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionTwo"
+            android:layout_width="371dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="0dp"
+            android:text="Question Two: \nWhat phrase means that the compiler validates types while compiling?"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="371dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="0dp"
+            android:text="Type validation"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="371dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="0dp"
+            android:text="Wrong text"
+            app:layout_constraintBottom_toTopOf="@+id/submitBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="371dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="0dp"
+            android:text="Type Safety"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="371dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="4dp"
+            android:text="Data binding"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="144dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Submit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="571dp" />
+
+            <Button
+                android:id="@+id/resetBtn"
+                android:layout_width="144dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Reset"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="646dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
